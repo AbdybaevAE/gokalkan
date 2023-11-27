@@ -3,7 +3,7 @@ package gokalkan
 import (
 	"encoding/base64"
 
-	"github.com/gokalkan/gokalkan/ckalkan"
+	"github.com/AbdybaevAE/gokalkan/ckalkan"
 )
 
 // GetCertFromCMS обеспечивает получение сертификата из CMS.

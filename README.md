@@ -43,7 +43,7 @@ sudo cp -f libkalkancryptwr-64.so.2.0.4 /usr/lib/libkalkancryptwr-64.so
 Версия Go 1.17+
 
 ```sh
-go get github.com/gokalkan/gokalkan
+go get github.com/AbdybaevAE/gokalkan
 ```
 
 ## Загрузка хранилища PKCS12
@@ -57,7 +57,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gokalkan/gokalkan"
+	"github.com/AbdybaevAE/gokalkan"
 )
 
 var (
@@ -157,7 +157,7 @@ go test -bench SignXML -run=^$ -benchmem
 			<a href="https://github.com/Zulbukharov">
 				<img src="https://avatars.githubusercontent.com/u/25000090?v=4" width="100px;" alt=""/>
 			</a><br />
-			<a href="https://github.com/gokalkan/gokalkan/commits?author=Zulbukharov" title="Code">
+			<a href="https://github.com/AbdybaevAE/gokalkan/commits?author=Zulbukharov" title="Code">
 				<sub><b>Zulbukharov Abylaikhan</b></sub>
 			</a>
 		</td>
@@ -165,7 +165,7 @@ go test -bench SignXML -run=^$ -benchmem
 			<a href="https://github.com/atlekbai">
 				<img src="https://avatars.githubusercontent.com/u/29381624?v=4&s=100" width="100px;" alt=""/>
 			</a><br />
-			<a href="https://github.com/gokalkan/gokalkan/commits?author=atlekbai" title="Code">
+			<a href="https://github.com/AbdybaevAE/gokalkan/commits?author=atlekbai" title="Code">
 				<sub><b>Tlekbai Ali</b></sub>
 			</a>
 		</td>
@@ -173,7 +173,7 @@ go test -bench SignXML -run=^$ -benchmem
 			<a href="https://github.com/gammban">
 				<img src="https://avatars.githubusercontent.com/u/98373125?v=4&s=100" width="100px;" alt=""/>
 			</a><br />
-			<a href="https://github.com/gokalkan/gokalkan/commits?author=gammban" title="Code">
+			<a href="https://github.com/AbdybaevAE/gokalkan/commits?author=gammban" title="Code">
 				<sub><b>Kilibayev Azat</b></sub>
 			</a>
 		</td>
@@ -192,6 +192,6 @@ The MIT License (MIT) 2021 - [Abylaikhan Zulbukharov](https://github.com/Zulbukh
 Please have a look at the [LICENSE.md](https://github.com/Zulbukharov/kalkancrypt-wrapper/blob/master/LICENSE.md) for more details.
 
 [pkg-img]: https://pkg.go.dev/badge/Zulbukharov/GoKalkan
-[pkg-url]: https://pkg.go.dev/github.com/gokalkan/gokalkan
+[pkg-url]: https://pkg.go.dev/github.com/AbdybaevAE/gokalkan
 [reportcard-img]: https://goreportcard.com/badge/Zulbukharov/GoKalkan
 [reportcard-url]: https://goreportcard.com/report/Zulbukharov/GoKalkan

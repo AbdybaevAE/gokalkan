@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gokalkan/gokalkan/ckalkan"
-	"github.com/gokalkan/gokalkan/internal/testdata"
-	"github.com/gokalkan/gokalkan/internal/testdata/test/certs"
+	"github.com/AbdybaevAE/gokalkan/ckalkan"
+	"github.com/AbdybaevAE/gokalkan/internal/testdata"
+	"github.com/AbdybaevAE/gokalkan/internal/testdata/test/certs"
 )
 
 //nolint:gochecknoglobals

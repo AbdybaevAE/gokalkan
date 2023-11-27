@@ -1,3 +1,3 @@
-module github.com/gokalkan/gokalkan
+module github.com/AbdybaevAE/gokalkan
 
 go 1.18
