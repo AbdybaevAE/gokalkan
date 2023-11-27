@@ -20,3 +20,9 @@ func (cli *Client) ValidateCertOCSP(cert string, url ...string) (string, error) 
 
 	return cli.kc.X509ValidateCertificate(cert, validateType, validatePath)
 }
+
+
+func (cli *Client) 	X509CertificateGetInfo(inCert string, prop ckalkan.CertProp) (result string, err error)
+{
+	return cli.kc.X509CertificateGetInfo(inCert, prop)
+}

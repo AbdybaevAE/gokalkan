@@ -28,6 +28,7 @@ type Kalkan interface {
 
 	HashSHA256(data []byte) ([]byte, error)
 	HashGOST95(data []byte) ([]byte, error)
+	X509CertificateGetInfo(inCert string, prop ckalkan.CertProp) (result string, err error)
 	Close() error
 }
 
