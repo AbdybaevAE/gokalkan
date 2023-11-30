@@ -23,7 +23,7 @@ func (cli *Client) VerifyData(signature []byte) (*ckalkan.VerifiedData, error) {
 
 	resp, err := cli.kc.VerifyData(signatureB64, "", "", flags)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	return resp, err
 }
