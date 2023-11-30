@@ -17,7 +17,7 @@ func (cli *Client) Verify(signature []byte) (string, error) {
 	}
 	return string(resp.Info), err
 }
-func (cli *Client) VerifyData(signature []byte) (*ckalkan.VerifyData, error) {
+func (cli *Client) VerifyData(signature []byte) (*ckalkan.VerifiedData, error) {
 	signatureB64 := base64.StdEncoding.EncodeToString(signature)
 	flags := ckalkan.FlagSignCMS | ckalkan.FlagInBase64 | ckalkan.FlagOutBase64
 
