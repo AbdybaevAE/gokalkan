@@ -30,6 +30,7 @@ type Kalkan interface {
 	HashSHA256(data []byte) ([]byte, error)
 	HashGOST95(data []byte) ([]byte, error)
 	X509CertificateGetInfo(inCert string, prop ckalkan.CertProp) (string, error)
+	Underlying() *ckalkan.Client
 	Close() error
 }
 
@@ -83,4 +84,8 @@ func NewClient(opts ...Option) (*Client, error) {
 	}
 
 	return cli, nil
+}
+
+func (cli *Client) Underlying() *ckalkan.Client {
+	return cli.kc
 }
