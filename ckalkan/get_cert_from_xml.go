@@ -1,11 +1,5 @@
 package ckalkan
 
-import "C"
-import (
-	"fmt"
-	"unsafe"
-)
-
 // #cgo LDFLAGS: -ldl
 // #include <dlfcn.h>
 // #include "KalkanCrypt.h"
@@ -13,6 +7,11 @@ import (
 // unsigned long KC_getCertFromXML(char *inXML, int inXMLLength, int inSignId, int flags, char *outCert, int *outCertLength) {
 //     return kc_funcs->KC_getCertFromXML(inXML, inXMLLength, inSignId, flags, outCert, outCertLength);
 // }
+import "C"
+import (
+	"fmt"
+	"unsafe"
+)
 
 // getCertFromCMS обеспечивает получение сертификата из xml.
 func (cli *Client) GetCertFromXML(xml string, signID int, flag Flag) (cert string, err error) {
