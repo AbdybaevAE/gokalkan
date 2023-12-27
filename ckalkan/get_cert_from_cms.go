@@ -5,7 +5,7 @@ package ckalkan
 // #include "KalkanCrypt.h"
 //
 // unsigned long getCertFromCMS(char *inCMS, int inCMSLen, int inSignId, int flags, char *outCert, int *outCertLength) {
-//     return kc_funcs->KC_GetCertFromCMS(inCMS, inCMSLen, inSignId, flags, outCert, outCertLength);
+//     return kc_funcs->KC_GetCertFromCMS(inCMS, inCMSLen, inSignId, outCert, outCertLength);
 // }
 import "C"
 import (
