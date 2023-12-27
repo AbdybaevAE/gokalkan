@@ -4,8 +4,8 @@ package ckalkan
 // #include <dlfcn.h>
 // #include "KalkanCrypt.h"
 //
-// unsigned long KC_getCertFromXML(char *inXML, int inXMLLength, int inSignId, int flags, char *outCert, int *outCertLength) {
-//     return kc_funcs->KC_getCertFromXML(inXML, inXMLLength, inSignId, flags, outCert, outCertLength);
+// unsigned long KC_getCertFromXML(char *inXML, int inXMLLength, int inSignId, char *outCert, int *outCertLength) {
+//     return kc_funcs->KC_getCertFromXML(inXML, inXMLLength, inSignId, outCert, outCertLength);
 // }
 import "C"
 import (
@@ -13,7 +13,7 @@ import (
 	"unsafe"
 )
 
-// getCertFromCMS обеспечивает получение сертификата из xml.
+// GetCertFromXML обеспечивает получение сертификата из xml.
 func (cli *Client) GetCertFromXML(xml string, signID int, flag Flag) (cert string, err error) {
 	defer func() {
 		if r := recover(); r != nil {
@@ -38,9 +38,8 @@ func (cli *Client) GetCertFromXML(xml string, signID int, flag Flag) (cert strin
 
 	rc := int(C.KC_getCertFromXML(
 		cXml,
-		C.int(len(cms)),
+		C.int(len(xml)),
 		C.int(signID),
-		C.int(int(flag)),
 		(*C.char)(outCert),
 		(*C.int)(unsafe.Pointer(&outCertLen)),
 	))
